@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset- "UTF-8">
+  <title>Button Triggered AJAX</title>
+  <link href="assets/css/style.css" rel="stylesheet"> 
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <script src="assets/javascript/gifTastic.js"></script>
+
+  <!-- giphykey -->
+  <!-- 8Jaon0lnqL45mbSJUDqgV8WgFfy2DQ8E -->
+  <!-- https://api.giphy.com/v1/gifs/search?api_key=8Jaon0lnqL45mbSJUDqgV8WgFfy2DQ8E&q=musical instruments&limit=25&offset=0&rating=G&lang=en -->
+</head>
+
+<body style= "background:linear-gradient(to right, green, black) ">
+<!-- linear-gradient(blue, black)"> -->
+<div class="container">
+  <button data-search="Drum">Drum</button>
+  <!-- added data search so when a button is clicked I can indicated what button is clicked and only the data for a specific instrument is pulled from the API -->
+  <button data-search="Violin">Violin</button>
+  <button data-search="Guitar">Guitar</button>
+  <button data-search="Saxaphone">Saxophone</button>
+  <button data-search="Piano">Piano</button>
+  <button data-search="Banjo">Banjo</button>
+
+
+  <!-- comment out some examples of possible more instruments -->
+  <!-- <button data-search="Horn">Horn</button> -->
+  <!-- <button data-search="Cello">Cello</button> -->
+  <!-- <button data-search="Bass">Bass</button> -->
+  <!-- <button data-search="Trombone">Trombone</button> -->
+  <!-- <button data-search="Flute">Flute</button> -->
+  <!-- <button data-search="Cymbol">Cymbol</button> -->
+  <!-- <button data-search="Maracas">Maracas</button> -->
+
+<br>
+<br>
+<!-- add a box to add additional instruments -->
+  <div class="float-right">
+      <form action="">
+      <input class="form-control" type="text" placeholder="Add an Instrument">
+      <button type="submit" class="btn btn-primary">Submit</button>
+  </div><br>
+    <!-- Float right on all viewport sizes</div><br> -->
+  <!-- <input class="form-control" type="text" placeholder="Add an Instrument"> -->
+
+
+  <div id="GIFArea"></div>
+
+</div>
+
+
+ 
+
+</body>
+
+</html>
