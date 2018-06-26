@@ -60,12 +60,13 @@ $(document).on("click", "button", function () {
 
   var instData = $(this).attr("data-name");
   console.log (instData);
-  var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-  instData + "&api_key=fq0AX58MelCuXjluMawLbu45ZSBrTruc&limit=10";
+  var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + instData + "&api_key=fq0AX58MelCuXjluMawLbu45ZSBrTruc&limit=10";
      console.log (queryURL)
   $.ajax({ query: queryURL,method:"GET"})
    .then(function (response) {
     console.log(response);
+    // $("#GIFArea").html();
+
     
    });
 
