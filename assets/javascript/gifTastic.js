@@ -54,8 +54,8 @@ $("#submitButton").click(function(event){
 // then queryURL or call to the Giphy API and gather data 10 images max.
 // then pull the data from the queryURL using the GET method and response
 // and post the images on the web page in the browser.
-$(document).on("click", "button", function () {
-
+$(document).on("click", "button", function (event) {
+event.preventDefault;
   $("#GIFArea").empty();
 
   var instData = $(this).attr("data-name");
